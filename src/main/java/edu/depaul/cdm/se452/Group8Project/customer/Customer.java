@@ -18,11 +18,13 @@ import lombok.NoArgsConstructor;
 public class Customer {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE)  
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private long id;
   
-  private String firstname;
-  private String lastname;
+  private String name;
+
+  private String email;
+
+  private Account accounts[];
 
 }
-
