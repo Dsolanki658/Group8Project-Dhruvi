@@ -1,4 +1,4 @@
-package edu.depaul.cdm.se452.Group8Project.checking;
+package edu.depaul.cdm.se452.Group8Project.savings;
 
 import edu.depaul.cdm.se452.Group8Project.account.AccountRepository;
 
