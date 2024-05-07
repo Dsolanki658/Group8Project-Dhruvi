@@ -15,12 +15,17 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@EqualsAndHashCode(callSuper=false)
 @Entity
 public class SavingsAccount extends Account {
     private double intRate;
 
     public SavingsAccount(String customer, String openingDate, double balance, double intRate) {
-        super(customer, openingDate, balance);
+        //In order to inherit the properties from parent class Account we need to call constructor
+        // Commented out below code until non default constructor is defined in Account class
+        // vague definition we can always modify later
+        //super(customer, openingDate, balance); 
+        super();
         this.intRate = intRate;
     }
 
